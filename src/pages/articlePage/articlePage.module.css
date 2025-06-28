@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.articleBox{
+    @apply
+    m-5
+    flex
+    flex-col
+    gap-2
+}
+.articleText{
+    @apply
+    mb-10
+}
+h1{
+    @apply
+    text-2xl
+    font-medium
+    mb-5
+}
+h2{
+    @apply
+    text-xl
+    font-semibold
+}
+h3{
+    @apply
+    text-lg
+    font-medium
+}
+p{
+    @apply
+    text-base
+    font-normal
+    my-2
+}
+.sec{
+    @apply
+    flex
+    justify-between
+    my-5
+}
+.writerBox{
+    @apply
+    flex
+}
+.writer, .category{
+    @apply
+    self-end
+}
+@media screen and (min-width:768px) {
+    .articleBox{
+        @apply
+        m-10
+    }
+}
+@media screen and (min-width:1024px) {
+    .articleBox{
+        @apply
+        mx-32
+    }
+}

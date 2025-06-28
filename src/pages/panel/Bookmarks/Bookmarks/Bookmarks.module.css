@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+.bookmarkBox{
+    @apply
+    flex
+    flex-row
+    justify-between
+    gap-2
+    m-2
+    p-3
+    bg-blue-100
+    rounded-sm
+}
+.actionsBox{
+    @apply
+    flex
+    flex-col
+    gap-2
+}
+.title{
+    @apply
+    text-gray-700
+    mb-2
+    px-2
+    flex-1
+}
+.deleteBtn{
+    @apply
+    !bg-red-600
+}
+.actionsBox button{
+    @apply
+    self-center
+    bg-blue-500
+    text-white
+    w-24
+    p-2
+    rounded-xl
+    cursor-pointer
+}
+@media screen and (min-width: 768px) {
+    .actionsBox{
+        @apply
+        flex
+        flex-row
+        justify-end
+        items-center
+        gap-2
+    }
+}

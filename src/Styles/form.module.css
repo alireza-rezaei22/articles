@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+.box{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+    m-10
+}
+.form {
+    @apply
+    bg-gradient-to-bl
+    from-blue-400
+    to-blue-600
+    p-8
+    flex
+    flex-col
+    gap-10
+    rounded-2xl
+    max-w-[600px]
+}
+.formTitle{
+    @apply
+    text-gray-100
+    text-xl
+    font-medium
+    self-center
+}
+.infoBox {
+    @apply
+    flex
+    flex-col
+    gap-4
+
+}
+.infoBox input{
+    @apply
+    bg-white
+    px-5
+    py-2
+    text-zinc-800
+    outline-none
+    rounded-md
+}
+.submitBtn{
+    @apply
+    self-center
+    bg-blue-300
+    text-gray-900
+    w-24
+    p-2
+    rounded-xl
+    cursor-pointer
+}
+.link{
+    @apply
+    self-start
+    text-blue-600
+    m-5
+}
+@media screen and (min-width:768px) {
+    .form{
+        @apply
+        w-[80%]
+    }
+    .link{
+        @apply
+        mx-20
+        mt-5
+    }
+}
+@media screen and (min-width:1024px) {
+    .link{
+        @apply
+        mx-112
+        mt-5
+    }
+}

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.profile{
+    @apply
+    p-3
+    flex
+    flex-col
+}

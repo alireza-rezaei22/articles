@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.navbar{
+    @apply
+    w-full
+    sticky
+    top-0
+    z-40
+    backdrop-blur
+    flex
+    justify-between
+    items-center
+    py-3
+    px-5
+    text-zinc-800
+}
+.drawer svg{
+    @apply
+    self-end
+    size-8
+    m-2
+}
+.links{
+    @apply
+    w-64
+}
+.leftSec{
+    @apply
+    hidden
+    justify-evenly
+    items-center
+    divide-x-2
+    divide-x-reverse
+}
+.rightSec{
+    @apply
+    hidden
+    justify-end
+    items-center
+    space-x-10
+    space-x-reverse
+    w-1/2
+}
+.tabs{
+    @apply
+    px-4
+    flex
+    gap-3
+}
+@media screen and (min-width:768px) {
+    .drawer{
+        @apply
+        hidden
+    }
+    .menuIcon, .homeIcon{
+        @apply
+        hidden
+        bg-red-800
+    }
+    .leftSec, .rightSec{
+        @apply
+        flex
+    }
+}

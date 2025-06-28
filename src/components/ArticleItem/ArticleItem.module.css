@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+.itemBox{
+    @apply
+    bg-gradient-to-bl
+    from-blue-400
+    to-blue-700
+    rounded-md
+    min-w-fit
+    max-w-[400px]
+    /* h-64 */
+    p-2
+    border-gray-700
+    flex
+    flex-col
+    justify-between
+}
+.itemBox:hover{
+    @apply
+    bg-gradient-to-bl
+    from-blue-400
+    to-blue-800
+    shadow-lg
+    /* scale-105 */
+    /* transition-transform  duration-100 */
+}
+img{
+    @apply
+    rounded-sm
+}
+.articleIcon{
+    @apply
+    bg-blue-400
+    p-2
+    rounded-full
+    hidden
+}
+.title , .describe{
+    @apply
+    mt-2
+    mx-2
+}
+.secTwo{
+    @apply
+    self-end
+    flex
+    w-full
+    justify-between
+}
+.acrions{
+    @apply
+    space-x-2
+}
+.category{
+    @apply
+    bg-gray-300
+    rounded-lg
+    px-2
+    cursor-context-menu
+}

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.commentBox{
+    @apply
+    mx-4
+    my-2
+}
+.ownerBox{
+    @apply
+    relative
+    flex
+    w-fit
+    gap-1
+}
+.CommentOwner{
+    @apply
+    w-fit
+    before:bg-red-500
+    before:absolute
+    before:bottom-0
+    before:left-0
+    before:w-2/5
+    before:h-1
+    after:bg-blue-500
+    after:flex
+    after:bottom-0
+    after:right-0
+    after:w-3/5
+    after:h-1
+}
+.comment{
+    @apply
+    px-8
+    py-2
+    italic
+    overflow-scroll
+    /* text-wrap */
+}

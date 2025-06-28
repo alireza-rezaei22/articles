@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+footer{
+    @apply
+    bg-gray-100
+    w-full
+    p-5
+    flex
+    /* divide-x-reverse */
+    divide-x-2
+    text-gray-800
+}
+.footeritems{
+    @apply
+    flex
+    flex-col
+    w-1/2
+    px-2
+}
+.footeritems a{
+    @apply
+    w-fit
+}

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+.headerBox{
+    @apply
+    relative
+    h-[30vh]
+    /* p-10 */
+    mb-5
+    rounded-md
+    overflow-hidden
+    text-white
+}
+.bgColor{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(39, 40, 43, 0.9));
+    @apply
+    absolute
+    w-full
+    h-full
+    /* bg-gradient-to-b */
+    /* from-gray-50
+    via-purple-500
+    to-gray-500 */
+    /* bg-opacity-50 */
+    /* bg-opacity-80 */
+    right-0
+    top-0
+    flex
+    items-end
+    text-2xl
+    font-medium
+    p-10
+    /* bg-cover
+    bg-center */
+    /* h-[30vh] */
+    /* p-10 */
+    /* rounded-md
+    flex
+    items-end
+    text-2xl
+    font-medium */
+    z-20
+}
+.text{
+    @apply
+    /* bg-gradient-to-bl
+    from-blue-400
+    to-blue-800 */
+    bg-[url('../../../public/images/item-img.jpg')]
+    bg-cover
+    bg-center
+    h-full
+    /* h-[30vh] */
+    /* mb-5
+    p-10 */
+    /* rounded-md */
+    
+    z-10
+}
+@media screen and (min-width:768px) {
+    .headerBox{
+        @apply
+        h-[40vh]
+        /* text-3xl */
+        /* p-12 */
+    }
+    .bgColor{
+        @apply
+        text-3xl
+        p-12
+    }
+}
+@media screen and (min-width:1024px) {
+    .headerBox{
+        @apply
+        h-[60vh]
+        
+    }
+    .bgColor{
+        @apply
+        text-4xl
+        p-18
+    }
+}

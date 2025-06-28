@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.capchaBox{
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+    gap-1
+}
+.capchaBox input{
+    @apply
+    w-3/4
+}
+.questionBox{
+    display: none;
+    @apply
+    /* background-color: lightgrey */
+    rounded-[50%]
+    w-1/4
+    h-9
+    flex
+    justify-center
+    items-center
+    cursor-pointer
+    /* overflow-hidden */
+}

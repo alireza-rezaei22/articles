@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+.newAritcleBox{
+    @apply
+    h-full
+    p-4
+    flex
+    flex-col
+    justify-between
+    gap-5
+}
+.row{
+    @apply
+    flex
+    flex-col
+    gap-3
+    mb-3
+    /* items-center */
+}
+.inputBox{
+    @apply
+    flex
+    text-nowrap
+    gap-1
+}
+.inputBox input{
+    @apply
+    w-full
+}
+.category{
+    @apply
+    m-2
+    p-2
+    bg-white
+    rounded-xl
+}
+/* .img{
+    @apply
+
+} */
+.editor{
+    @apply
+    flex-1
+}
+.submitBtn{
+    @apply
+    self-center
+    bg-blue-400
+    text-gray-900
+    w-24
+    p-2
+    rounded-xl
+    cursor-pointer
+}
+@media screen and (min-width:768px) {
+    .inputs{
+        @apply
+        flex
+        flex-col
+        gap-7
+    }
+    .row{
+        @apply
+        gap-7
+    }
+    .secOne{
+        @apply
+        flex
+        flex-row
+        justify-between
+        gap-2
+    }
+}
+/* @media screen and (min-width:1024px) {
+    .row{
+        @apply
+        flex
+        flex-row
+        justify-between
+        gap-2
+    }
+} */

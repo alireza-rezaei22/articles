@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.selectBox{
+    @apply
+    w-full
+    max-w-[350px]
+    bg-gradient-to-bl
+    from-blue-400
+    to-blue-600
+    flex
+    items-center
+    p-4
+    rounded-md
+}

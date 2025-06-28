@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+.Box{
+    @apply
+    mx-5
+    my-2
+    flex-1
+}
+.filterBox{
+    @apply
+    mb-10
+    flex
+    flex-col
+    gap-3
+    justify-between
+}
+.articlesList{
+    @apply
+    w-full
+    pb-5
+    grid
+    grid-cols-[repeat(auto-fit,minmax(200px,1fr))]
+    gap-5
+}
+
+.articlesBox{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-between
+}
+@media screen and (min-width:768px) {
+    .Box{
+        @apply
+        mx-10
+    }
+    .filterBox{
+        @apply
+        mb-10
+        flex
+        flex-row
+        justify-between
+    }
+}
+@media screen and (min-width:1024px) {
+    .Box{
+        @apply
+        mx-32
+    }
+}

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.flexBox{
+    @apply
+    h-[100vh]
+    flex
+    flex-col
+    justify-between
+    bg-red-500
+}
